@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="shortcut icon" href="./media/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <ul>
+                <li>
+                    <label for="firstName"></label>
+                    <input type="text" name="firstName" id="firstName" placeholder="firstName">
+                </li>
+                <li>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <input type="tel" name="phone" id="phone" title="Your phone number">
+                </li>
+                <li>
+                    <input type="date" name="dob" id="dob" placeholder="dateOfBirth" required>
+                </li>
+                <li>
+                    <input type="password" name="password" id="password">
+                </li>
+                <li>
+                    <textarea name="address" id="address" cols="20" rows="10"></textarea>
+                </li>
+                <li>
+                    <input type="file" name="images" id="images" placeholder="upload passport photo" accept=".jpg, .png" multiple>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Other Info</legend>
+            <div>
+                <p>Gender</p>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" checked>
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <p>State of Origin</p>
+                <select title="State of Origin">
+                    <optgroup label="SE">
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa"></option>
+                    </optgroup>
+                    <option value="Akwa Ibom"></option>
+                    <option value="Anambra"></option>
+                    <option value="Bauchi"></option>
+                    <option value="Oyo"></option>
+                    <option value="Ogun"></option>
+                    <option value="Lagos"></option>
+                    <option value="Benue"></option>
+                    <option value="Zamfara"></option>
+                    <option value="Bayelsa"></option>
+                </select>
+            </div>
+            <div>
+                <p>Courses</p>
+
+                <input type="checkbox" name="Courses" id="react">
+                <label for="react">React</label>
+
+                <input type="checkbox" name="Courses" id="js">
+                <label for="js">JavaScript</label>
+
+                <input type="checkbox" name="Courses" id="python">
+                <label for="python">Python</label><br>
+
+                <input type="checkbox" name="Courses" id="java">
+                <label for="java">Java</label>
+                
+            </div>
+        </fieldset>
+        <div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I accept <a href="#">all terms and conditions</a></label>
+        </div>
+
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
