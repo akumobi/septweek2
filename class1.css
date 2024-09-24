@@ -1,0 +1,62 @@
+/* element: child, sibling, adjacent sibling, all siblings, direct or indirect child, pseudo-element */
+/* class: pseudo-class */
+/* id */
+
+/* element specificity 001*/
+h1{
+    color: red);
+}
+p{
+    color: blueviolet;
+}
+
+/* child element: direct child element - all element is 001 */
+body > h1{
+    color: darkslategrey;
+}
+
+/* all children selector */
+
+body p{
+    color: coral;
+}
+
+/* direct children selector */
+body > div > p{
+    color: red;
+}
+
+/*All sibling selector */
+h1 ~ p{
+    color: orange;
+}
+
+p ~ p{
+    color: orange;
+}
+
+/* Adjacent Sibling Selector - Next sibling*/
+h1 ~ p{
+    color: blue;
+}
+
+p + p + p{
+    color: brown;
+}
+
+/* Any Element Selector - does not have specificity and is represented by a star and can be used to remove default style*/
+*{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* pseudo element - referenced using double colon (::) */
+p::selection{
+    color: white;
+    background-color: black;
+}
+div::first-letter{
+    background-color: grey;
+}

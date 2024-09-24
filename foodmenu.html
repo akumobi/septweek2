@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table{
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        table tr{
+            border: 10px solid gray;
+        }
+        table th, table td{
+            text-align: left;
+            border-inline: 5px solid green;
+            padding-block: 8px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Quarter Food Menu</title>
+</head>
+<body>
+    <table>
+        <caption>Last Quarter Food Menu</caption>
+        <thead>
+            <tr>
+                <th scope="col">Days</th>
+                <th scope="col">Breakfast</th>
+                <th scope="col">Lunch</th>
+                <th scope="col">Dinner</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>Tea</td>
+                <td>Beans</td>
+                <td>Fruit</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td>Yam</td>
+                <td rowspan="2">Rice</td>
+                <td>Cake</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td>Noodles</td>
+                <td>Boiled Eggs</td>
+            </tr>
+            <tr>
+                <th scope="row">Thursday</th>
+                <td>Juice</td>
+                <td>Potatoes</td>
+                <td>Fried Yam</td>
+            </tr>
+            <tr>
+                <th scope="row">Friday</th>
+                <td>Cake</td>
+                <td>Pounded Yam</td>
+                <td>Fruit</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Eat healthy, eat for strength!</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

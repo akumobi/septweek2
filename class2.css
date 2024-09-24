@@ -1,0 +1,26 @@
+/* class selector ~ classes are selected using . and has a higher specificity than elements */
+.one{
+    background-color: aqua;
+}
+
+.two{
+    background-color: blanchedalmond;
+}
+
+p.one{
+    background-color: olive;
+}
+.one.two{
+    background-color: blueviolet;
+}
+
+/* pseudo classes ~ are targeted using a colon*/
+
+li:nth-of-type(2n+2){
+    background-color: #fa3bcc;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
